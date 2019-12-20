@@ -1,0 +1,21 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf *.js **/*.js",
+    "build": "yarn clean;tsc",
+    "dev": "rm -rf *.js **/*.js;tsc;node --inspect-brk=9229 index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lesterhsu",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^12.12.17"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.7.7",
+    "typescript": "^3.7.3"
+  }
+}
